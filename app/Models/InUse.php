@@ -22,6 +22,21 @@ class InUse extends Model
      *
      * @var array
      */
+
+    /**
+     * Primary Key
+     *
+     * @var integer
+     */
+    protected $primaryKey = array('customer_id','car_id');
+
+    /**
+     * Indicates if the IDs are auto-incrementing
+     *
+     * @var bool
+     */
+    public $incrementing = false;
+
     protected $fillable = [
         'customer_id',
         'car_id',

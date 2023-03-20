@@ -19,6 +19,7 @@ class CreateInUsesTable extends Migration
             $table->timestamp('date_start');
             $table->timestamp('date_end');
             $table->timestamps();
+
             $table->primary(['customer_id', 'car_id']);
 
             $table->foreign('customer_id')->references('id')->on('customers')->onDelete('cascade');

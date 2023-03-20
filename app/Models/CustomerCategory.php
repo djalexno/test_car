@@ -22,6 +22,21 @@ class CustomerCategory extends Model
      *
      * @var array
      */
+
+    /**
+     * Primary Key
+     *
+     * @var integer
+     */
+    protected $primaryKey = 'post_id';
+
+    /**
+     * Indicates if the IDs are auto-incrementing
+     *
+     * @var bool
+     */
+    public $incrementing = false;
+
     protected $fillable = [
         'post_id',
         'category_id',
